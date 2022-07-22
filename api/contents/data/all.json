@@ -2,9 +2,9 @@
   "content": [
     {
       "content": null,
-      "created": "2022-07-22T14:02:01.460773Z",
+      "created": "2022-07-22T14:19:34.888479Z",
       "format": null,
-      "last_modified": "2022-07-22T14:01:11.324894Z",
+      "last_modified": "2022-07-22T14:18:38.924047Z",
       "mimetype": "text/markdown",
       "name": "SOURCES.md",
       "path": "data/SOURCES.md",
@@ -14,9 +14,9 @@
     },
     {
       "content": null,
-      "created": "2022-07-22T14:02:01.456774Z",
+      "created": "2022-07-22T14:19:34.884480Z",
       "format": null,
-      "last_modified": "2022-07-22T14:01:11.320894Z",
+      "last_modified": "2022-07-22T14:18:38.924047Z",
       "mimetype": "image/png",
       "name": "Ouessant_2016_monthly_stats.png",
       "path": "data/Ouessant_2016_monthly_stats.png",
@@ -26,9 +26,9 @@
     },
     {
       "content": null,
-      "created": "2022-07-22T14:02:01.460773Z",
+      "created": "2022-07-22T14:19:34.884480Z",
       "format": null,
-      "last_modified": "2022-07-22T14:01:11.324894Z",
+      "last_modified": "2022-07-22T14:18:38.924047Z",
       "mimetype": "text/csv",
       "name": "Ouessant_data_2016.csv",
       "path": "data/Ouessant_data_2016.csv",
@@ -37,9 +37,9 @@
       "writable": true
     }
   ],
-  "created": "2022-07-22T14:02:01.460773Z",
+  "created": "2022-07-22T14:19:34.888479Z",
   "format": "json",
-  "last_modified": "2022-07-22T14:02:01.460773Z",
+  "last_modified": "2022-07-22T14:19:34.888479Z",
   "mimetype": null,
   "name": "data",
   "path": "data",

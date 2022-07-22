@@ -7,6 +7,6 @@ returning economic and operation indicators.
 
 ## ⚡ Try it in your browser ⚡
 
-➡️ **https://microgrids-x.github.io/Microgrids.web/**
+➡️ **https://microgrids-x.github.io/Microgrids.web/lab?path=Microgrid_py_PV_BT_DG.ipynb**
 
-
+https://microgrids-x.github.io/Microgrids.web/lab?path=Microgrid_py_PV_BT_DG.ipynb
