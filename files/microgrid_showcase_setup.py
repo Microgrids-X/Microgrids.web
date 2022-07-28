@@ -3,78 +3,131 @@
 """
 # Pierre Haessig — July 2022
 
-import microgrids as mgs
-
-from ipywidgets import interactive, fixed
+from pathlib import Path
+from functools import lru_cache
 
 import numpy as np
 from matplotlib import pyplot as plt
-from matplotlib.patches import FancyBboxPatch, Circle, Arrow
+
+try: # Install microgrids & ipywidgets packages in JupyterLite (if run in JupyterLite)
+    import piplite
+    async def install_packages():
+        await piplite.install(['microgrids', 'ipywidgets'])
+        print('Microgrids & ipywidgets packages installed with piplite.')
+
+    # Get away with the fact that `await` is not allowed in a script:
+    import asyncio
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(install_packages())
+except ImportError:
+    pass
+
+from ipywidgets import interactive, fixed
+
+import microgrids as mgs
 
 
-def add_component(ax, xy_A, anchor, width, height, label='', color='C0', flow=None):
-    # Origin of Rectangle
-    if anchor=='N':
-        xy_rect = (xy_A[0]-width/2, xy_A[1]-height)
-    elif anchor=='NE':
-        xy_rect = (xy_A[0]-width, xy_A[1]-height)
-    elif anchor=='E':
-        xy_rect = (xy_A[0]-width, xy_A[1]-height/2)
-    elif anchor=='SE':
-        xy_rect = (xy_A[0]-width, xy_A[1])
-    elif anchor=='S':
-        xy_rect = (xy_A[0]-width/2, xy_A[1])
-    elif anchor=='SW': # easiest case
-        xy_rect = (xy_A[0], xy_A[1])
-    elif anchor=='W':
-        xy_rect = (xy_A[0], xy_A[1]-height/2)
-    elif anchor=='NW':
-        xy_rect = (xy_A[0], xy_A[1]-height)
-    
-    # C is center of rectangle
-    xC = xy_rect[0]+width/2
-    yC = xy_rect[1]+height/2
-    # M is midpoint of link from origin to A
-    xM = xy_A[0]/2
-    yM = xy_A[1]/2
-    # Rectangle which depicts the component, anchored at A
-    rect = FancyBboxPatch(xy_rect, width, height,
-                          facecolor=color, alpha=1,
-                          lw=1, edgecolor='black',
-                          boxstyle='Round, pad=0.1')
-    # Link to the orgin
-    ax.add_patch(Arrow(0, 0, xC, yC, width=0.5, color='k'))
-    #if flow == 'load' or flow == 'both':
-    # power flow arrow doesn't look right.
-    #    ax.add_patch(Arrow(0, 0, xM+xy_A[0]/4, yM+xy_A[1]/4, color='k'))
-    
-    ax.add_patch(rect)
-    ax.text(xC, yC, label,
-        size='large', ha='center', va='center')
-# end add_component
+# Load time series data
+print(__file__)
+folder = Path(__file__).parent
+datapath = folder / 'data' / 'Ouessant_data_2016.csv'
+data = np.loadtxt(datapath,
+                  delimiter=',', skiprows=2, usecols=(1,2))
 
-def test_add_component():
-    """add components with all 8 possible anchors"""
-    fig, ax = plt.subplots(1,1)
+# Split load and solar data:
+Pload = data[:,0] # kW
+Ppv1k =  data[:,1] / 1000; # convert to kW/kWp
 
-    ax.set(
-        aspect='equal',
-        xlim=(-2.5,2.5),
-        ylim=(-2,2)
+
+## Create Microgrid project and its components
+
+# Project
+lifetime = 25 # yr
+discount_rate = 0.05
+timestep = 1 # h
+
+project = mgs.Project(lifetime, discount_rate, timestep)
+
+# Diesel generator
+power_rated_gen = 1800.  # /2 to see some load shedding (kW)
+fuel_intercept = 0.0 # fuel curve intercept (l/h/kW_max)
+fuel_slope = 0.240 # fuel curve slope (l/h/kW)
+fuel_price = 1. # fuel price ($/l)
+investment_price_gen = 400. # initial investiment price ($/kW)
+om_price_gen = 0.02 # operation & maintenance price ($/kW/h of operation)
+lifetime_gen = 15000. # generator lifetime (h)
+
+# Battery energy storage
+energy_rated_sto = 9000. # rated energy capacity (kWh)
+investment_price_sto = 350. # initial investiment price ($/kWh)
+om_price_sto = 10. # operation and maintenance price ($/kWh/y)
+lifetime_sto = 15. # calendar lifetime (y)
+lifetime_cycles = 3000 # maximum number of cycles over life (1)
+# Parameters with default values
+charge_rate_max = 1.0 # max charge power for 1 kWh (kW/kWh = h^-1)
+discharge_rate_max = 1.0 # max discharge power for 1 kWh (kW/kWh = h^-1)
+loss_factor_sto = 0.05 # linear loss factor α (round-trip efficiency is about 1 − 2α) ∈ [0,1]
+
+# Photovoltaic generation
+power_rated_pv = 6000. # rated power (kW)
+irradiance = Ppv1k # global solar irradiance incident on the PV array (kW/m²)
+investment_price_pv = 1200. # initial investiment price ($/kW)
+om_price_pv = 20.# operation and maintenance price ($/kW)
+lifetime_pv = 25. # lifetime (y)
+# Parameters with default values
+derating_factor_pv = 1.0 # derating factor (or performance ratio) ∈ [0,1]"
+
+
+def interactive_mg(power_rated_gen, power_rated_pv, energy_rated_sto):
+    """Create Microgrid which includes Generator,
+    PV plant and Battery with given ratings"""
+    generator = mgs.DispatchableGenerator(power_rated_gen,
+        fuel_intercept, fuel_slope, fuel_price,
+        investment_price_gen, om_price_gen,
+        lifetime_gen
     )
-    ax.grid(True)
 
-    add_component(ax, (1,1), anchor='SW', width=1, height=2/3,
-                  label='Comp A\n1 MW', color='b')
-    add_component(ax, (1,0), anchor='W', width=1, height=2/3,
-                  label='Comp B\n1 MW', color='r')
-    add_component(ax, (1,-1), anchor='NW', width=1, height=2/3, color='g')
+    battery = mgs.Battery(energy_rated_sto,
+        investment_price_sto, om_price_sto,
+        lifetime_sto, lifetime_cycles,
+        charge_rate_max, discharge_rate_max,
+        loss_factor_sto)
 
-    add_component(ax, (-1,1), anchor='SE', width=1, height=2/3, color='b')
-    add_component(ax, (-1,0), anchor='E', width=1, height=2/3, color='r')
-    add_component(ax, (-1,-1), anchor='NE', width=1, height=2/3, color='g')
+    photovoltaic = mgs.Photovoltaic(power_rated_pv, irradiance,
+        investment_price_pv, om_price_pv,
+        lifetime_pv, derating_factor_pv)
 
-    add_component(ax, (0,1), anchor='S', width=1, height=2/3, color='yellow')
-    add_component(ax, (0,-1), anchor='N', width=1, height=2/3, color='pink')
+    microgrid = mgs.Microgrid(project, Pload,
+        generator, battery,
+        {'Solar PV': photovoltaic}
+    )
+    return microgrid
 
-    ax.add_patch(Circle((0,0), radius=0.1, color='k'));
+
+@lru_cache(maxsize=1000)
+def cached_oper_costs(power_rated_gen, power_rated_pv, energy_rated_sto):
+    microgrid = interactive_mg(power_rated_gen, power_rated_pv, energy_rated_sto)
+    oper_stats = mgs.sim_operation(microgrid)
+    mg_costs = mgs.sim_economics(microgrid, oper_stats)
+    return oper_stats, mg_costs
+
+
+def interactive_energy_mix(PV_power=0., Batt_energy=0.):
+    """display energy mix with given ratings"""
+    microgrid = interactive_mg(power_rated_gen, PV_power, Batt_energy)
+    # Simulate
+    oper_stats, mg_costs = cached_oper_costs(power_rated_gen, PV_power, Batt_energy)
+    # Show some performance stats:
+    print(f'Load shedding rate: {oper_stats.shed_rate:.1%}')
+    print(f'Renewable rate: {oper_stats.renew_rate:.1%}')
+    print(f'Levelized Cost of Electricity: {mg_costs.lcoe:.3f} $/kWh')
+
+    # Display energy mix
+    fig, (ax1, ax2) = plt.subplots(2,1, num=1, figsize=(6,6),
+                                  gridspec_kw=dict(height_ratios=(2,1)))
+    mgs.plotting.plot_ratings(microgrid, xlim=(-3.5,2.5), ylim=(-2.5,2.5), ax=ax1)
+    mgs.plotting.plot_energy_mix(microgrid, oper_stats, ax=ax2)
+    fig.tight_layout()
+    plt.show()
+
+print('Showcase setup complete.')
