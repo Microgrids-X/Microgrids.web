@@ -7,5 +7,8 @@ returning economic and operation indicators.
 
 ## ⚡ Try Microgrid simulation in your browser ⚡
 
-➡️ **https://microgrids-x.github.io/Microgrids.web/lab?path=Microgrid_py_PV_BT_DG.ipynb**
+
+➡️ **Simple showcase**: https://microgrids-x.github.io/Microgrids.web/lab?path=Microgrid_showcase.ipynb
+
+➡️ More detailed notebook on how to use [Microgrids.py](https://github.com/Microgrids-X/Microgrids.py): https://microgrids-x.github.io/Microgrids.web/lab?path=Microgrid_py_PV_BT_DG.ipynb
 
