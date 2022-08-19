@@ -1,4 +1,4 @@
-#  Microgrids.py web demo
+# ![Microgrids.web](https://github.com/Microgrids-X/Microgrids-artwork/raw/main/png/Microgrids-web-256.png)
 
 Demo of [Microgrids.py](https://github.com/Microgrids-X/Microgrids.py) running in a web browser (no need to install any Python environment), thanks to [JupyterLite](https://jupyterlite.readthedocs.io/)! 
 
