@@ -1,0 +1,25 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2022-09-15T15:14:16.461892Z",
+      "format": null,
+      "last_modified": "2022-09-15T15:11:44.037992Z",
+      "mimetype": "image/svg+xml",
+      "name": "Island_power_banner.svg",
+      "path": "images/Island_power_banner.svg",
+      "size": 863561,
+      "type": "file",
+      "writable": true
+    }
+  ],
+  "created": "2022-09-15T15:14:16.457892Z",
+  "format": "json",
+  "last_modified": "2022-09-15T15:14:16.457892Z",
+  "mimetype": null,
+  "name": "images",
+  "path": "images",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}
