@@ -12,5 +12,5 @@ returning economic and operation indicators.
 
 - Version française : https://microgrids-x.github.io/Microgrids.web/retro/notebooks/?path=Microgrid_showcase_FR.ipynb (traduction partielle)
 
-➡️ More detailed notebook on how to use [Microgrids.py](https://github.com/Microgrids-X/Microgrids.py): https://microgrids-x.github.io/Microgrids.web/lab?path=Microgrid_py_PV_BT_DG.ipynb
+➡️ More detailed notebook on how to use [Microgrids.py](https://github.com/Microgrids-X/Microgrids.py): https://microgrids-x.github.io/Microgrids.web/lab?path=Microgrid_Wind-Solar.ipynb
 

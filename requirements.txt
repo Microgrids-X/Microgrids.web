@@ -1,8 +1,19 @@
-ipympl>=0.8.2
-ipywidgets>=7.7,<8
-jupyterlab~=3.4.3
+# Requirements taken from jupyterlite/demo (version Apr 5, 2023)
+# Core modules (mandatory)
+jupyterlite-core==0.1.0
+jupyterlab~=3.5.1
+
+# Python kernel (optional)
+jupyterlite-pyodide-kernel==0.0.6
+
+# Language support (optional)
 jupyterlab-language-pack-fr-FR
 jupyterlab-language-pack-zh-CN
-jupyterlab_miami_nights
-jupyterlite==0.1.0b12
-theme-darcula
+
+# JupyterLab: dark theme
+jupyterlab-night
+
+# Python: ipywidget library for Jupyter notebooks (optional)
+ipywidgets>=8.0.0,<9
+# Python: interative Matplotlib library for Jupyter notebooks (optional)
+ipympl>=0.8.2
