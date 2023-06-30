@@ -2,7 +2,7 @@
   "jupyter-config-data": {
     "appName": "JupyterLite",
     "appUrl": "./lab",
-    "appVersion": "0.1.0-beta.12",
+    "appVersion": "0.1.0",
     "baseUrl": "./",
     "defaultKernelName": "python",
     "faviconUrl": "./lab/favicon.ico",
@@ -10,26 +10,26 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.1bd01b57743def902f73.js",
+        "load": "static/remoteEntry.35e76720037cafa02724.js",
         "name": "@jupyter-widgets/jupyterlab-manager"
       },
       {
         "extension": "./extension",
-        "liteExtension": false,
-        "load": "static/remoteEntry.8a4c97071917cf84832f.js",
-        "name": "@telamonian/theme-darcula"
+        "liteExtension": true,
+        "load": "static/remoteEntry.9769e16943c1366c4972.js",
+        "name": "@jupyterlite/pyodide-kernel-extension"
       },
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.145e469029155b53b350.js",
-        "name": "@timkpaine/jupyterlab_miami_nights"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": false,
-        "load": "static/remoteEntry.6b5d328600b8f618f724.js",
+        "load": "static/remoteEntry.2245c790a510bf1865ea.js",
         "name": "jupyter-matplotlib"
+      },
+      {
+        "extension": "./extension",
+        "liteExtension": false,
+        "load": "static/remoteEntry.6a37df5d4590b29196a3.js",
+        "name": "jupyterlab-night"
       },
       {
         "extension": "./extension",
@@ -316,6 +316,13 @@
     "fullMathjaxUrl": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js",
     "fullStaticUrl": "./build",
     "licensesUrl": "./lab/api/licenses",
+    "litePluginSettings": {
+      "@jupyterlite/pyodide-kernel-extension:kernel": {
+        "pipliteUrls": [
+          "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=dada95d1039a199bb4503c6652605f7815ea056b19f3c08a6e78a0c5739f19d4"
+        ]
+      }
+    },
     "mathjaxConfig": "TeX-AMS_CHTML-full,Safe"
   },
   "jupyter-lite-schema-version": 0
