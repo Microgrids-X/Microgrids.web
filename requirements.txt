@@ -1,10 +1,10 @@
-# Requirements taken from jupyterlite/demo (version Apr 5, 2023)
+# Requirements udjusted from jupyterlite/demo (last update: 14 sept 2023)
 # Core modules (mandatory)
-jupyterlite-core==0.1.0
-jupyterlab~=3.5.1
+jupyterlite-core==0.1.2
+jupyterlab~=3.6.5
 
 # Python kernel (optional)
-jupyterlite-pyodide-kernel==0.0.6
+jupyterlite-pyodide-kernel==0.0.11
 
 # Language support (optional)
 jupyterlab-language-pack-fr-FR
