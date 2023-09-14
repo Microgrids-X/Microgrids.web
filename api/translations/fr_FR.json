@@ -131,6 +131,9 @@
       "Currently, there is no way to revoke access other than shutting down your server.": [
         "Actuellement, il n'y a aucun moyen de r\u00e9voquer l'acc\u00e8s autre que l'arr\u00eat de votre serveur."
       ],
+      "Document session error": [
+        "Erreur de session du document"
+      ],
       "Generate a Shared Link": [
         "Cr\u00e9er un lien de partage"
       ],
@@ -152,23 +155,14 @@
       "Please be careful who you share it with.": [
         "Soyez prudent lors du partage de ce lien."
       ],
-      "Reload": [
-        "Recharger"
-      ],
       "Security warning!": [
         "Avertissement de s\u00e9curit\u00e9!"
       ],
       "Server": [
         "Serveur"
       ],
-      "Session expired": [
-        "Session expir\u00e9e"
-      ],
       "Share Jupyter Server Link": [
         "Partager le lien du serveur Jupyter"
-      ],
-      "The document session expired. You need to reload this browser tab.": [
-        "La session du document a expir\u00e9. Vous devez recharger cet onglet du navigateur."
       ],
       "They will be able to access this server AS YOU.": [
         "Ils pourront acc\u00e9der \u00e0 ce serveur EN VOTRE NOM."
@@ -176,7 +170,7 @@
       "To revoke access, go to File -> Hub Control Panel, and restart your server.": [
         "Pour r\u00e9voquer l'acc\u00e8s, allez dans Fichier -> Panneau de configuration Hub et red\u00e9marrez votre serveur."
       ],
-      "Two collaborative sessions are accessing the file %1 simultaneously.\n                \n'Opening a document with multiple views simultaneously is not supported. Please close one view; otherwise, you might lose some of your progress.": [
+      "Two collaborative sessions are accessing the file %1 simultaneously.\n                \nOpening a document with multiple views simultaneously is not supported. Please close one view; otherwise, you might lose some of your progress.": [
         "Deux sessions collaboratives acc\u00e8dent simultan\u00e9ment au fichier %1 .\n                \nOuvrir un document avec des vues multiples simultan\u00e9ment n'est pas pris en charge. Veuillez fermer une vue; sinon, vous risquez de perdre une partie de vos modifications."
       ],
       "User info": [
@@ -224,6 +218,9 @@
       ],
       "Current memory usage": [
         "Utilisation actuelle de la m\u00e9moire"
+      ],
+      "Current resource usage": [
+        "Utilisation actuelle des ressources"
       ],
       "Detected IPyKernel version: %1": [
         "Version de IPyKernel d\u00e9tect\u00e9e : %1"
@@ -320,6 +317,42 @@
       ],
       "Wired:": [
         "Branch\u00e9 :"
+      ],
+      "schema\u0004Resource Usage Indicator": [
+        "Indicateur d'utilisation des ressources"
+      ],
+      "schema\u0004Resource Usage Indicator settings.": [
+        "Param\u00e8tres de l'indicateur d'utilisation des ressources."
+      ],
+      "settings\u0004CPU Settings": [
+        "Param\u00e8tres du CPU"
+      ],
+      "settings\u0004Enable resource usage indicators": [
+        "Activer les indicateurs d'utilisation des ressources"
+      ],
+      "settings\u0004Label for the cpu indicator": [
+        "\u00c9tiquette pour l'usage du processeur"
+      ],
+      "settings\u0004Label for the memory indicator": [
+        "\u00c9tiquette pour l'usage de la m\u00e9moire"
+      ],
+      "settings\u0004Memory Settings": [
+        "Param\u00e8tres m\u00e9moire"
+      ],
+      "settings\u0004Refresh Rate (ms)": [
+        "Taux de Rafra\u00eechissement (en ms)"
+      ],
+      "settings\u0004Refresh Rate to sync metrics data": [
+        "Taux de rafra\u00eechissement des donn\u00e9es d'usage"
+      ],
+      "settings\u0004Settings for the CPU indicator": [
+        "Param\u00e8tres pour l'indicateur du processeur"
+      ],
+      "settings\u0004Settings for the memory indicator": [
+        "Param\u00e8tres pour l'indicateur de la m\u00e9moire"
+      ],
+      "settings\u0004Whether to enable resource usage indicators on topbar": [
+        "Activer ou non les indicateurs d'utilisation des ressources sur la barre sup\u00e9rieure"
       ]
     },
     "jupyterlab": {
@@ -607,6 +640,12 @@
       "Cancel": [
         "Annuler"
       ],
+      "Cancel Kernel Restart": [
+        "Annuler le red\u00e9marrage du noyau"
+      ],
+      "Cancel console Shut Down": [
+        "Annuler l'arr\u00eat de la console"
+      ],
       "Cannot Download": [
         "T\u00e9l\u00e9chargement impossible"
       ],
@@ -745,6 +784,12 @@
       "Close All Tabs": [
         "Fermer tous les onglets"
       ],
+      "Close Document": [
+        "Fermer le document"
+      ],
+      "Close Document without saving": [
+        "Fermer le document sans sauvegarder"
+      ],
       "Close Tab": [
         "Fermer l'onglet"
       ],
@@ -762,6 +807,9 @@
       ],
       "Close and save": [
         "Fermer et sauvegarder"
+      ],
+      "Close and save Document": [
+        "Fermer et enregistrer le document"
       ],
       "Close without saving": [
         "Fermer sans sauvegarder"
@@ -834,6 +882,15 @@
       ],
       "Completions": [
         "Compl\u00e9tions"
+      ],
+      "Confirm Kernel Restart": [
+        "Confirmer le red\u00e9marrage du noyau"
+      ],
+      "Confirm Trusting this notebook": [
+        "Confirmer ce notebook est de confiance"
+      ],
+      "Confirm console Shut Down": [
+        "Confirmer l'arr\u00eat de la console"
       ],
       "Confirmation": [
         "Confirmation"
@@ -1079,6 +1136,9 @@
       ],
       "Discard": [
         "Abandonner"
+      ],
+      "Discard changes to file": [
+        "Ignorer les modifications apport\u00e9es au fichier"
       ],
       "Disconnected": [
         "D\u00e9connect\u00e9"
@@ -2246,6 +2306,9 @@
       "Overwrite": [
         "\u00c9craser"
       ],
+      "Overwrite Existing File": [
+        "Remplacer le fichier existant"
+      ],
       "Overwrite file?": [
         "\u00c9craser le fichier ?"
       ],
@@ -2613,6 +2676,9 @@
       ],
       "Revert contents to previous checkpoint": [
         "R\u00e9tablir le contenu au point de contr\u00f4le pr\u00e9c\u00e9dent"
+      ],
+      "Revert to Checkpoint": [
+        "Revenir au point de contr\u00f4le"
       ],
       "Rotate Clockwise": [
         "Rotation horaire"
@@ -3093,6 +3159,9 @@
       ],
       "Some changes have not been saved. Continue without saving?": [
         "Certaines modifications n'ont pas \u00e9t\u00e9 enregistr\u00e9es. Continuer sans enregistrer ?"
+      ],
+      "Sort Notebooks Above Files": [
+        "Grouper les notebooks au-dessus des fichiers"
       ],
       "Source": [
         "Source"
@@ -4126,6 +4195,9 @@
       "settings\u0004Base configuration used by all CodeMirror editors.": [
         "Configuration de base utilis\u00e9e par tous les \u00e9diteurs CodeMirror."
       ],
+      "settings\u0004Base level for the highest headings": [
+        "Index de base pour les titres les plus \u00e9lev\u00e9s"
+      ],
       "settings\u0004CSV Viewer": [
         "Visionneuse CSV"
       ],
@@ -4312,6 +4384,9 @@
       "settings\u0004If a provider can not return the response for a completer request before timeout, the result of this provider will be ignored. Value is in millisecond": [
         "Si un compl\u00e9teur ne peut pas renvoyer la r\u00e9ponse pour une requ\u00eate dans un certain d\u00e9lai, le r\u00e9sultat de ce compl\u00e9teur sera ignor\u00e9. La valeur du d\u00e9lai est en milliseconde"
       ],
+      "settings\u0004If defined, it will override the command caption": [
+        "Si d\u00e9fini, cela remplacera la l\u00e9gende de la commande"
+      ],
       "settings\u0004If defined, it will override the command icon": [
         "Si d\u00e9fini, cela remplacera l'ic\u00f4ne de commande"
       ],
@@ -4335,6 +4410,9 @@
       ],
       "settings\u0004Interaction mode": [
         "Mode d'interaction"
+      ],
+      "settings\u0004Item caption": [
+        "L\u00e9gende de l'\u00e9l\u00e9ment"
       ],
       "settings\u0004Item icon id": [
         "Identifiant de l'ic\u00f4ne"
@@ -4696,6 +4774,9 @@
       "settings\u0004The mode under which JupyterLab should start. If empty, the mode will be imposed by the URL": [
         "Le mode d'affichage de JupyterLab au d\u00e9marrage. Si vide, le mode sera impos\u00e9 par l'URL"
       ],
+      "settings\u0004The number headings start at.": [
+        "L'index des titres commence \u00e0."
+      ],
       "settings\u0004The property set up by extension": [
         "La propri\u00e9t\u00e9 configur\u00e9e par l'extension"
       ],
@@ -4756,6 +4837,9 @@
       "settings\u0004When multiple servers match specific document/language, the server with the highest rank will be used": [
         "Lorsque plusieurs serveurs correspondent \u00e0 un document/langage sp\u00e9cifique, le serveur avec la priorit\u00e9 la plus \u00e9lev\u00e9e sera utilis\u00e9"
       ],
+      "settings\u0004When sorting by name, group notebooks before other files": [
+        "Lors du tri par nom, regroupe les notebooks avant les autres fichiers"
+      ],
       "settings\u0004Whether the command palette should be modal or in the left panel.": [
         "Si la palette de commandes doit \u00eatre modale ou dans le panneau de gauche."
       ],
@@ -4810,11 +4894,17 @@
       "settings\u0004Whether to check for newer version of JupyterLab or not. It requires `fechNews` to be `true` to be active. If `true`, it will make a request to a website.": [
         "V\u00e9rifier si une nouvelle version de JupyterLab est disponible ou non. Il faut que `fechNews` soit `true` pour \u00eatre actif. Si `true`, une requ\u00eate \u00e0 un site web sera envoy\u00e9e."
       ],
+      "settings\u0004Whether to check for newer version of JupyterLab or not. It requires `fetchNews` to be `true` to be active. If `true`, it will make a request to a website.": [
+        "V\u00e9rifier si une nouvelle version de JupyterLab est disponible ou non. Il faut que `fetchNews` soit `true` pour \u00eatre actif. Si `true`, une requ\u00eate \u00e0 un site web sera envoy\u00e9e."
+      ],
       "settings\u0004Whether to fetch news from Jupyter news feed. If `true`, it will make a request to a website.": [
         "R\u00e9cup\u00e9rer les actualit\u00e9s depuis le fil de nouvelles Jupyter. Si `true`, une requ\u00eate \u00e0 un site web sera envoy\u00e9e."
       ],
       "settings\u0004Whether to flash on new log message or not": [
         "S'il faut flasher ou non pour un nouveau message de journal"
+      ],
+      "settings\u0004Whether to group the notebooks away from files": [
+        "Regrouper ou non les notebooks s\u00e9par\u00e9ment des autres fichiers"
       ],
       "settings\u0004Whether to hide YAML front matter.\nThe YAML front matter must be placed at the top of the document,\nstarted by a line of three dashes (---) and ended by a line of\nthree dashes (---) or three points (...).": [
         "S'il faut cacher le pr\u00e9ambule en YAML.\nLe pr\u00e9ambule en YAML doit \u00eatre plac\u00e9 au d\u00e9but du document,\ncommen\u00e7ant par une ligne avec trois tirets (---), et finissant par une ligne\navec trois tirets (---) ou trois point (...)."
@@ -4968,8 +5058,29 @@
       "# Insertions": [
         "# Insertions"
       ],
+      "%1 (on %2)": [
+        "%1 (sur %2)"
+      ],
       "(missing message)": [
         "(message manquant)"
+      ],
+      "2-up": [
+        "C\u00f4te-\u00e0-c\u00f4te"
+      ],
+      "Abort": [
+        "Annuler"
+      ],
+      "Abort rebase": [
+        "Annuler le rebase"
+      ],
+      "Abort the rebase": [
+        "Annuler le rebase"
+      ],
+      "Abort the rebase.": [
+        "Annuler le rebase."
+      ],
+      "Abort the rebase\u2026": [
+        "Annuler le rebase\u2026"
       ],
       "Add": [
         "Ajouter"
@@ -4995,6 +5106,15 @@
       "Amending the commit will re-use the previous commit summary": [
         "La modification du commit r\u00e9utilisera le r\u00e9sum\u00e9 du commit pr\u00e9c\u00e9dent"
       ],
+      "Apply stash entry": [
+        "Appliquer la r\u00e9serve"
+      ],
+      "Apply the latest stash": [
+        "Appliquer les derni\u00e8res modifications mises de c\u00f4t\u00e9"
+      ],
+      "Are you sure you want to abort the rebase?": [
+        "\u00cates-vous s\u00fbr de vouloir annuler le rebase?"
+      ],
       "Are you sure you want to ignore all %1 files within this git repository?": [
         "\u00cates-vous s\u00fbr de vouloir ignorer tous les fichiers %1 de ce d\u00e9p\u00f4t Git?"
       ],
@@ -5018,6 +5138,9 @@
       ],
       "Branch '%1' merged into '%2'.": [
         "Branche '%1' fusionn\u00e9e dans '%2'."
+      ],
+      "Branch '%1' rebase onto '%2'.": [
+        "La branche '%1' est rebas\u00e9e sur '%2'."
       ],
       "Branch created.": [
         "Branche cr\u00e9\u00e9e."
@@ -5049,11 +5172,17 @@
       "Checkout to tag: %1": [
         "Passer au tag : %1"
       ],
+      "Cherry picking in": [
+        "Copie en cours dans"
+      ],
       "Choose a remote to push to.": [
         "Choisissez le d\u00e9p\u00f4t distant vers lequel pousser."
       ],
       "Clear the current filter": [
         "Effacer le filtre actuel"
+      ],
+      "Clear the entire stash": [
+        "Effacer toutes les r\u00e9serves"
       ],
       "Clone": [
         "Cloner"
@@ -5088,6 +5217,9 @@
       "Close this dialog without merging a branch": [
         "Fermer cette bo\u00eete de dialogue sans fusionner une branche"
       ],
+      "Close this dialog without rebasing the branch": [
+        "Fermer cette bo\u00eete de dialogue sans rebaser la branche"
+      ],
       "Closing all opened files...": [
         "Fermeture de tous les fichiers ouverts..."
       ],
@@ -5106,8 +5238,17 @@
       "Commit from the Commit Box": [
         "Valider depuis la bo\u00eete de validation"
       ],
+      "Commit submitted continuing rebase.": [
+        "Soumission r\u00e9ussie; poursuite du rebase."
+      ],
       "Committed changes.": [
         "Modifications valid\u00e9es."
+      ],
+      "Committer email:": [
+        "E-mail du soumetteur :"
+      ],
+      "Committer name:": [
+        "Nom du soumetteur :"
       ],
       "Committing changes...": [
         "Validation des modifications..."
@@ -5124,8 +5265,23 @@
       "Conflicted": [
         "Avec conflits"
       ],
+      "Continue": [
+        "Continuer"
+      ],
       "Continue Without Pulling": [
         "Continuer sans tirer les changements"
+      ],
+      "Continue rebase": [
+        "Poursuivre le rebase"
+      ],
+      "Continue the rebase by committing the current state.": [
+        "Poursuivre le rebase en soumettant l'\u00e9tat actuel."
+      ],
+      "Continue the rebase.": [
+        "Continue le rebase."
+      ],
+      "Continue the rebase\u2026": [
+        "Poursuivre le rebase\u2026"
       ],
       "Control character": [
         "Caract\u00e8re de contr\u00f4le"
@@ -5172,6 +5328,9 @@
       "Current Repository": [
         "D\u00e9p\u00f4t actuel"
       ],
+      "Current commit skipped.": [
+        "La soumission actuelle a \u00e9t\u00e9 ignor\u00e9."
+      ],
       "Current repository: %1": [
         "D\u00e9p\u00f4t actuel : %1"
       ],
@@ -5201,6 +5360,9 @@
       ],
       "Description (optional)": [
         "Description (facultatif)"
+      ],
+      "Detached Head at": [
+        "T\u00eate de branche d\u00e9tach\u00e9e \u00e0"
       ],
       "Detailed message": [
         "Message d\u00e9taill\u00e9"
@@ -5283,11 +5445,17 @@
       "Do you really want to make this directory a Git Repo?": [
         "\u00cates-vous s\u00fbr de vouloir faire de ce r\u00e9pertoire un d\u00e9p\u00f4t Git?"
       ],
+      "Do you want to stash your changes? ": [
+        "Voulez-vous mettre de c\u00f4t\u00e9 les modifications? "
+      ],
       "Double click opens diff": [
         "Double clic ouvre les diff\u00e9rences"
       ],
       "Download the repository": [
         "T\u00e9l\u00e9charger le d\u00e9p\u00f4t"
+      ],
+      "Drop stash entry": [
+        "Supprimer la r\u00e9serve"
       ],
       "Encountered an error when initializing the repository. Error: ": [
         "Une erreur s'est produite lors de l'initialisation du d\u00e9p\u00f4t. Erreur: "
@@ -5325,6 +5493,9 @@
       "Error Loading File Diff:": [
         "Erreur lors du chargement des diff\u00e9rences du fichier :"
       ],
+      "Error Loading Image Diff:": [
+        "Erreur lors du chargement des diff\u00e9rences d'image :"
+      ],
       "Error Loading Notebook Diff:": [
         "Erreur lors du chargement des diff\u00e9rences du notebook :"
       ],
@@ -5337,8 +5508,17 @@
       "Existing Remotes:": [
         "D\u00e9p\u00f4ts distants existants :"
       ],
+      "Fail to abort the rebase.": [
+        "\u00c9chec de l'annulation du rebase."
+      ],
+      "Fail to continue rebasing.": [
+        "Echec de la poursuite du rebase."
+      ],
       "Fail to get the tags.": [
         "Impossible de r\u00e9cup\u00e9rer les tags."
+      ],
+      "Fail to skip current commit when rebasing.": [
+        "Impossible d'ignorer la soumission actuelle lors du rebase."
       ],
       "Failed to checkout tag.": [
         "Impossible d'extraire l'\u00e9tiquette."
@@ -5357,6 +5537,9 @@
       ],
       "Failed to get a valid file value.": [
         "Impossible d'obtenir une valeur de fichier valide."
+      ],
+      "Failed to get the stash": [
+        "Echec de la r\u00e9cup\u00e9ration des r\u00e9serves"
       ],
       "Failed to init notebook diff view: %1": [
         "Impossible d'afficher les diff\u00e9rences du notebook : %1"
@@ -5384,6 +5567,12 @@
       ],
       "Failed to push": [
         "Poussage a \u00e9chou\u00e9"
+      ],
+      "Failed to rebase branch '%1' onto '%2'.": [
+        "Impossible de rebaser la branche '%1' sur '%2'."
+      ],
+      "Failed to refresh Image diff.": [
+        "Impossible d'actualiser la diff\u00e9rence d'image."
       ],
       "Failed to refresh Notebook diff.": [
         "\u00c9chec de l'actualisation des diff\u00e9rences du Notebook."
@@ -5421,6 +5610,9 @@
       "Force Push": [
         "\u00c9craser le d\u00e9p\u00f4t distant"
       ],
+      "Get all the stashed changes": [
+        "R\u00e9cup\u00e9rer toutes les modifications en r\u00e9serve"
+      ],
       "Git": [
         "Git"
       ],
@@ -5450,6 +5642,9 @@
       ],
       "Go to line": [
         "Aller \u00e0 la ligne"
+      ],
+      "Got the stash list": [
+        "La liste des r\u00e9serves a \u00e9t\u00e9 r\u00e9cup\u00e9r\u00e9e"
       ],
       "Hide unchanged cells": [
         "Masquer les cellules inchang\u00e9es"
@@ -5543,6 +5738,9 @@
       "Merge branch": [
         "Fusionner la branche"
       ],
+      "Merge branch %1": [
+        "Fusionner la branche %1"
+      ],
       "Merge selected branch in the current branch": [
         "Fusionner la branche s\u00e9lectionn\u00e9e dans la branche actuelle"
       ],
@@ -5551,6 +5749,9 @@
       ],
       "Merging branch '%1'\u2026": [
         "Fusion de la branche '%1'\u2026"
+      ],
+      "Merging in": [
+        "Fusion en cours dans"
       ],
       "Name": [
         "Nom"
@@ -5581,6 +5782,9 @@
       ],
       "One or more open files are behind %1 head. Do you want to pull the latest remote version?": [
         "Un ou plusieurs fichiers ouverts sont derri\u00e8re la t\u00eate de %1 . Voulez-vous r\u00e9cup\u00e9rer la derni\u00e8re version distante ?"
+      ],
+      "Onion Skin": [
+        "Par transparence"
       ],
       "Open": [
         "Ouvrir"
@@ -5615,6 +5819,9 @@
       "Open this file": [
         "Ouvrir ce fichier"
       ],
+      "Pick another rebase action.": [
+        "Choisissez une autre action de rebase."
+      ],
       "Please commit, stash, or discard your changes before you checkout tags.": [
         "Veuillez valider, remiser ou annuler vos modifications avant d'extraire des \u00e9tiquettes."
       ],
@@ -5623,6 +5830,9 @@
       ],
       "Please select push options.": [
         "Veuillez s\u00e9lectionner les options pour pousser."
+      ],
+      "Pop stash entry": [
+        "Appliquer et supprimer la r\u00e9serve"
       ],
       "Proceed": [
         "Continuer"
@@ -5681,6 +5891,33 @@
       "RESULT": [
         "R\u00e9sultat final"
       ],
+      "Rebase": [
+        "Rebaser"
+      ],
+      "Rebase Branch": [
+        "Rebaser la branche"
+      ],
+      "Rebase aborted.": [
+        "Rebase abandonn\u00e9e."
+      ],
+      "Rebase branch": [
+        "Rebaser la branche"
+      ],
+      "Rebase branch %1": [
+        "Rebase la branche %1"
+      ],
+      "Rebase branch\u2026": [
+        "Rebaser la branche\u2026"
+      ],
+      "Rebase current branch onto the selected branch": [
+        "Rebaser la branche actuelle sur la branche s\u00e9lectionn\u00e9e"
+      ],
+      "Rebasing": [
+        "Rebase en cours"
+      ],
+      "Rebasing current branch onto '%1'\u2026": [
+        "Rebase de la branche actuelle en cours sur '%1'\u2026"
+      ],
       "Refresh": [
         "Actualiser"
       ],
@@ -5723,6 +5960,9 @@
       "Resetting...": [
         "R\u00e9initialisation en cours..."
       ],
+      "Resolve rebase": [
+        "R\u00e9soudre le rebase"
+      ],
       "Resolve with conflicts": [
         "R\u00e9soudre malgr\u00e9 les conflits"
       ],
@@ -5759,6 +5999,9 @@
       "Select the branch to merge in %1": [
         "S\u00e9lectionnez la branche \u00e0 fusionner dans %1"
       ],
+      "Select the branch to rebase %1 onto": [
+        "S\u00e9lectionnez la branche sur laquelle rebaser %1"
+      ],
       "Selection deleted": [
         "S\u00e9lection supprim\u00e9e"
       ],
@@ -5773,6 +6016,21 @@
       ],
       "Simple staging": [
         "Indexation Simple"
+      ],
+      "Skip": [
+        "Ignorer"
+      ],
+      "Skip current commit": [
+        "Ignorer la soumission actuelle"
+      ],
+      "Skip current commit and continue the rebase.": [
+        "Ignorer la soumission actuelle et continuer le rebase."
+      ],
+      "Skip current commit\u2026": [
+        "Ignorer la soumission actuelle\u2026"
+      ],
+      "Skip the current commit.": [
+        "Ignorer la soumission actuelle."
       ],
       "Stage": [
         "Indexer"
@@ -5810,6 +6068,27 @@
       "Start tracking selected files": [
         "Commencer \u00e0 suivre les fichiers s\u00e9lectionn\u00e9s"
       ],
+      "Stash": [
+        "R\u00e9serve"
+      ],
+      "Stash Changes": [
+        "Mettre de c\u00f4t\u00e9 les modifications"
+      ],
+      "Stash List": [
+        "List des r\u00e9serves"
+      ],
+      "Stash all current changes": [
+        "Mettre de c\u00f4t\u00e9 tous les modifications"
+      ],
+      "Stash latest changes": [
+        "Mettre de c\u00f4t\u00e9 les derni\u00e8res modifications"
+      ],
+      "Stash message (optional)": [
+        "Message dans la r\u00e9serve (optionnel)"
+      ],
+      "Stashing changes": [
+        "Mettre de c\u00f4t\u00e9 les modifications"
+      ],
       "Submit changes": [
         "Soumettre les modifications"
       ],
@@ -5840,11 +6119,17 @@
       "Successfully reverted changes.": [
         "Changements annul\u00e9s avec succ\u00e8s."
       ],
+      "Successfully stashed": [
+        "Mise en r\u00e9serve r\u00e9ussie"
+      ],
       "Summary": [
         "R\u00e9sum\u00e9"
       ],
       "Summary (%1 to commit)": [
         "R\u00e9sum\u00e9 (%1 \u00e0 commit)"
+      ],
+      "Swipe": [
+        "Balayage"
       ],
       "Switch to branch: %1": [
         "Basculer vers la branche : %1"
@@ -5932,6 +6217,15 @@
       ],
       "User refused to set identity.": [
         "L'utilisateur a refus\u00e9 de d\u00e9finir une identit\u00e9."
+      ],
+      "View Image Diff in 2-up Mode": [
+        "Visualiser les diff\u00e9rences d'image en mode c\u00f4te-\u00e0-c\u00f4te"
+      ],
+      "View Image Diff in Onion Skin Mode": [
+        "Voir les diff\u00e9rences d'image par transparence"
+      ],
+      "View Image Diff in Swipe Mode": [
+        "Voir les diff\u00e9rences d'image en mode balayage"
       ],
       "View branches": [
         "Afficher toutes les branches"
@@ -6032,6 +6326,9 @@
       "password / personal access token": [
         "mot de passe / jeton d'acc\u00e8s personnel"
       ],
+      "personal access token": [
+        "jeton d'acc\u00e8s personnel"
+      ],
       "previous": [
         "pr\u00e9c\u00e9dent"
       ],
@@ -6104,6 +6401,9 @@
       "settings\u0004Open files behind warning": [
         "Avertir lors de l'ouverture de fichiers en retard sur la r\u00e9f\u00e9rence"
       ],
+      "settings\u0004Prompt user identity on commit": [
+        "Demander l'identit\u00e9 de l'utilisateur lors d'une soumission"
+      ],
       "settings\u0004Refresh if the Git tab is hidden": [
         "Actualiser si l'onglet Git est cach\u00e9"
       ],
@@ -6127,6 +6427,9 @@
       ],
       "settings\u0004Whether to check Git status when the Git tab is not visible. Choose `false` for higher performance.": [
         "Si vous voulez v\u00e9rifier l'\u00e9tat de Git lorsque l'onglet Git n'est pas visible. Choisissez `false` pour des performances plus \u00e9lev\u00e9es."
+      ],
+      "settings\u0004Whether to prompt for user name and email for each commit.": [
+        "Demander ou non un nom d'utilisateur et un email pour chaque soumission."
       ],
       "settings\u0004Whether to trigger or not a push for each commit.": [
         "D\u00e9clencher ou non un push pour chaque commit."
@@ -6565,6 +6868,9 @@
       "settings\u0004Diagnostic messages to ignore": [
         "Messages de diagnostic \u00e0 ignorer"
       ],
+      "settings\u0004Diagnostic severity levels to ignore": [
+        "Niveaux de diagnostic \u00e0 ignorer"
+      ],
       "settings\u0004Disable": [
         "D\u00e9sactiver"
       ],
@@ -6606,6 +6912,9 @@
       ],
       "settings\u0004Language-server specific configuration, keyed by implementation, e.g: \n\npyls: {\n  serverSettings: {\n    pyls: {\n      plugins: {\n        pydocstyle: {\n          enabled: true\n        },\n        pyflakes: {\n          enabled: false\n        },\n        flake8: {\n          enabled: true\n        }\n      }\n    }\n  }\n}\n\nAlternatively, using VSCode's naming convention:\n\npyls: {\n  serverSettings: {\n    \"pyls.plugins.pydocstyle.enabled\": true,\n    \"pyls.plugins.pyflakes.enabled\": false,\n    \"pyls.plugins.flake8.enabled\": true\n  }\n}": [
         "Configuration sp\u00e9cifique du serveur de language, trie par l'impl\u00e9mentation, par exemple: \n\npyls: {\n  serverSettings: {\n    pyls: {\n      plugins: {\n        pydocstyle: {\n          enabled: true\n        },\n        flocons : {\n          enabled: false\n        },\n        flake8 : {\n          enabled: true\n        }\n      }\n    }\n  }\n}\n\nAlternativement, en utilisant la convention de nommage de VSCode:\n\npyls: {\n  serverSettings: {\n    \"pyls. lugins.pydocstyle.enabled\": true,\n    \"pyls.plugins.pyflakes.enabled\": false,\n    \"pyls.plugins.flake8.enabled\": true\n  }\n}"
+      ],
+      "settings\u0004Language-server specific configuration, keyed by implementation, e.g: \n\npyls: {\n  serverSettings: {\n    pyls: {\n      plugins: {\n        pydocstyle: {\n          enabled: true\n        },\n        pyflakes: {\n          enabled: false\n        },\n        flake8: {\n          enabled: true\n        }\n      }\n    }\n  }\n}\n\nAlternatively, using dotted naming convention:\n\npyls: {\n  serverSettings: {\n    \"pyls.plugins.pydocstyle.enabled\": true,\n    \"pyls.plugins.pyflakes.enabled\": false,\n    \"pyls.plugins.flake8.enabled\": true\n  }\n}": [
+        "Configuration sp\u00e9cifique du serveur de language, trie par l'impl\u00e9mentation, par exemple: \n\npyls: {\n  serverSettings: {\n    pyls: {\n      plugins: {\n        pydocstyle: {\n          enabled: true\n        },\n        flocons : {\n          enabled: false\n        },\n        flake8 : {\n          enabled: true\n        }\n      }\n    }\n  }\n}\n\nAlternativement, en utilisant les noms s\u00e9par\u00e9s par des points :\n\npyls: {\n  serverSettings: {\n    \"pyls.plugins.pydocstyle.enabled\": true,\n    \"pyls.plugins.pyflakes.enabled\": false,\n    \"pyls.plugins.flake8.enabled\": true\n  }\n}"
       ],
       "settings\u0004Layout of the completer, one of: 'detail-below', 'side-by-side'": [
         "Mise en page du compl\u00e9teur, un de : 'detail-below' (d\u00e9tails en dessous), 'side-by-side' (c\u00f4te-\u00e0-c\u00f4te)"
@@ -6654,6 +6963,9 @@
       ],
       "settings\u0004Remove highlights on editor (e.g. cell) blur": [
         "Supprimer les surlignements sur l'\u00e9diteur (par exemple la cellule) flou"
+      ],
+      "settings\u0004Severities of diagnostics which should not be shown in the panel nor highlighted in the editor.": [
+        "Niveaux de diagnostics qui ne devraient pas \u00eatre affich\u00e9s dans le panneau ni mis en \u00e9vidence dans l'\u00e9diteur."
       ],
       "settings\u0004Should an attempt to get the kernel response (with timeout as specified by kernelResponseTimeout) be made if kernel is busy? If you often write code in notebook while computations are running for long time (e.g. training models), turning this off might give you faster response times.": [
         "Devrait-on essayer d'obtenir la r\u00e9ponse du noyau (avec un d\u00e9lai d'attente tel que sp\u00e9cifi\u00e9 par kernelResponseTimeout) si le noyau est occup\u00e9 ? Si vous \u00e9crivez souvent du code dans un bloc-notes pendant que les calculs fonctionnent depuis longtemps (e. , mod\u00e8les de formation), cette d\u00e9sactivation peut vous donner des temps de r\u00e9ponse plus rapides."
@@ -7046,6 +7358,9 @@
       "Jupytext FAQ": [
         "FAQ Jupytext"
       ],
+      "Jupytext Notebook": [
+        "Jupyter Notebook"
+      ],
       "Jupytext Reference": [
         "R\u00e9f\u00e9rence Jupytext"
       ],
@@ -7111,6 +7426,9 @@
       "CONTRIBUTOR LIST": [
         "LISTE DES CONTRIBUTEURS"
       ],
+      "Close and Shut Down Notebook": [
+        "Fermer et arr\u00eater le notebook"
+      ],
       "Collapse %1 side panel": [
         "R\u00e9duire le panneau lat\u00e9ral %1"
       ],
@@ -7128,6 +7446,9 @@
       ],
       "Filter files by name": [
         "Filtrer les fichiers par nom"
+      ],
+      "Handle Local Link": [
+        "G\u00e9rer le lien local"
       ],
       "Help": [
         "Aide"
@@ -7152,6 +7473,9 @@
       ],
       "Left Sidebar": [
         "Barre lat\u00e9rale gauche"
+      ],
+      "NbClassic": [
+        "NbClassic"
       ],
       "New": [
         "Nouveau"
@@ -7179,6 +7503,9 @@
       ],
       "Running": [
         "En cours"
+      ],
+      "Select items to perform actions on them.": [
+        "S\u00e9lectionnez les \u00e9l\u00e9ments sur lesquels effectuer des actions."
       ],
       "Show %1 in the left sidebar": [
         "Afficher %1 dans la barre lat\u00e9rale de gauche"
@@ -7210,6 +7537,12 @@
       "schema\u0004File Browser Widget": [
         "Navigateur de fichiers"
       ],
+      "schema\u0004File Browser Widget - File Actions": [
+        "Navigateur de fichiers - Actions de fichiers"
+      ],
+      "schema\u0004File Browser widget - File Actions settings.": [
+        "Navigateur de fichiers - Param\u00e8tres des actions de fichiers."
+      ],
       "schema\u0004File Browser widget settings.": [
         "Param\u00e8tres du navigateur de fichiers."
       ],
@@ -7218,9 +7551,6 @@
       ],
       "schema\u0004Interface Switcher settings.": [
         "Param\u00e8tres du s\u00e9lecteur d'interface."
-      ],
-      "schema\u0004Jupyter Notebook DocumentSearch Settings": [
-        "Param\u00e8tres de la recherche de documents de Jupyter Notebook"
       ],
       "schema\u0004Jupyter Notebook Help Menu Entries": [
         "Entr\u00e9es du menu aide de Jupyter Notebook"
@@ -7258,6 +7588,12 @@
       "schema\u0004Launch Shortcuts.": [
         "Ouvrir les raccourcis."
       ],
+      "schema\u0004Notebook Shell": [
+        "Disposition de l'application"
+      ],
+      "schema\u0004Notebook Shell layout settings.": [
+        "Param\u00e8tres de mise en page de Notebook."
+      ],
       "schema\u0004Notebook checkpoint indicator": [
         "Indicateur de point de contr\u00f4le du notebook"
       ],
@@ -7272,6 +7608,9 @@
       ],
       "settings\u0004Command id": [
         "Identifiant de la commande"
+      ],
+      "settings\u0004Customize shell widget positioning": [
+        "Personnaliser le positionnement des widgets"
       ],
       "settings\u0004File browser toolbar items": [
         "\u00c9l\u00e9ments de la barre d'outils du navigateur de fichiers"
@@ -7302,6 +7641,9 @@
       ],
       "settings\u0004Note: To disable a toolbar item,\ncopy it to User Preferences and add the\n\"disabled\" key. The following example will disable the uploader button:\n{\n  \"toolbar\": [\n    {\n      \"name\": \"uploader\",\n      \"disabled\": true\n    }\n  ]\n}\n\nToolbar description:": [
         "Remarque : Pour d\u00e9sactiver un \u00e9l\u00e9ment de la barre d'outils,\ncopiez-le dans les pr\u00e9f\u00e9rences utilisateur et ajoutez l'attribut\n\"disabled\". L'exemple suivant d\u00e9sactivera le bouton pour envoyer un fichier:\n{\n  \"toolbar\": [\n    {\n      \"name\": \"uploader\",\n      \"disabled\": true\n    }\n  ]\n}\n\nDescription de la barre d'outils :"
+      ],
+      "settings\u0004Overrides default widget position in the application layout": [
+        "Remplace la position par d\u00e9faut du widget dans la disposition de l'application"
       ],
       "settings\u0004Top Bar Visibility": [
         "Visibilit\u00e9 de la barre sup\u00e9rieure"
@@ -7466,6 +7808,12 @@
       "Dictionary not loaded": [
         "Dictionnaire non charg\u00e9"
       ],
+      "Enable": [
+        "Activer"
+      ],
+      "Enable spellchecking in %1?": [
+        "Activer la correction orthographique dans %1?"
+      ],
       "Ignore": [
         "Ignorer"
       ],
@@ -7475,8 +7823,23 @@
       "No spellcheck suggestions": [
         "Aucune suggestion de correction orthographique"
       ],
+      "Remember this decision (updates settings).": [
+        "Se souvenir de cette d\u00e9cision (mise \u00e0 jour des param\u00e8tres)."
+      ],
+      "Remember this decision.": [
+        "Se souvenir de cette d\u00e9cision."
+      ],
       "Spell Checker": [
         "V\u00e9rificateur orthographique"
+      ],
+      "Spellcheck off": [
+        "Correcteur orthographique arr\u00eat\u00e9"
+      ],
+      "The decision will apply to all editors with this content type.": [
+        "La d\u00e9cision s'appliquera \u00e0 tous les \u00e9diteurs de ce type de contenu."
+      ],
+      "The will apply to all editors with %1 content type.": [
+        "Cela s'appliquera \u00e0 tous les \u00e9diteurs de type %1."
       ],
       "Toggle spellchecker": [
         "Activer/d\u00e9sactiver le correcteur orthographique"
@@ -7492,6 +7855,12 @@
       ],
       "settings\u0004Case-sensitive list of words to be ignored": [
         "Liste de mots \u00e0 ignorer sensible \u00e0 la casse"
+      ],
+      "settings\u0004Check spelling in comments": [
+        "V\u00e9rifier l'orthographe dans les commentaires"
+      ],
+      "settings\u0004Check spelling in strings": [
+        "V\u00e9rifier l'orthographe dans les cha\u00eenes de caract\u00e8res"
       ],
       "settings\u0004Dictionary identifier, e.g. en-us": [
         "Identifiant du dictionnaire, par ex. en-us"
@@ -7519,6 +7888,9 @@
       ],
       "settings\u0004Theme for decorating misspelt words, one of:\n  - 'background-box': fills the background of the misspelt word;\n  - 'wavy-underline': underline with wavelets (note: Chrome has a bug which prevents rendering of wavelets under some very short words)\n  - 'dotted-underline': underline with dotted style": [
         "Th\u00e8me pour d\u00e9corer des mots mal orthographi\u00e9s, parmi :\n  - 'background-box' : remplit le fond du mot mal orthographi\u00e9s;\n  - 'wavy-underline' : Souligner avec des ondes (note: Chrome a un bug qui emp\u00eache le rendu des ondes sous quelques mots tr\u00e8s courts)\n  - 'dotted-underline' : souligner avec le style pointill\u00e9"
+      ],
+      "settings\u0004Time delay before spellchecking starts (debouncer).": [
+        "D\u00e9lai avant le d\u00e9but de la v\u00e9rification orthographique (d\u00e9bounceur)."
       ],
       "settings\u0004URL address of the .aff file": [
         "Adresse URL du fichier .aff"
