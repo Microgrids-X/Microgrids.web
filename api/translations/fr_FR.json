@@ -93,6 +93,9 @@
       "settings\u0004Archive format": [
         "Format de l'archive"
       ],
+      "settings\u0004Archive format for compressing folder; one of ['' (submenu), 'zip', 'tgz', 'tar.gz', 'tbz', 'tbz2', 'tar.bz', 'tar.bz2', 'txz', 'tar.xz']": [
+        "Format d'archive pour la compression des dossiers; un parmi ['' (sous-menu), 'zip', 'tgz', 'tar.gz', 'tbz', 'tbz2', 'tar.bz', 'tar.bz2', 'txz', 'tar.xz']"
+      ],
       "settings\u0004Archive format for compressing folder; one of [null (submenu), 'zip', 'tgz', 'tar.gz', 'tbz', 'tbz2', 'tar.bz', 'tar.bz2', 'txz', 'tar.xz']": [
         "Format d'archive pour la compression des dossiers; un parmi [null (sous-menu), 'zip', 'tgz', 'tar.gz', 'tbz', 'tbz2', 'tar.bz', 'tar.bz2', 'txz', 'tar.xz']"
       ],
@@ -461,6 +464,9 @@
       "About the %1 Kernel": [
         "A propos du noyau %1"
       ],
+      "Action disabled as the file is not trusted.": [
+        "Action d\u00e9sactiv\u00e9e car le fichier n'est pas fiable."
+      ],
       "Activate Command Palette": [
         "Activer la palette de commandes"
       ],
@@ -775,6 +781,9 @@
       "Close": [
         "Fermer"
       ],
+      "Close %1": [
+        "Fermer %1"
+      ],
       "Close All": [
         "Fermer tous"
       ],
@@ -810,6 +819,9 @@
       ],
       "Close and save Document": [
         "Fermer et enregistrer le document"
+      ],
+      "Close tab": [
+        "Fermer l'onglet"
       ],
       "Close without saving": [
         "Fermer sans sauvegarder"
@@ -3525,6 +3537,9 @@
       ],
       "Whether the HTML file is trusted.\n    Trusting the file allows scripts to run in it,\n    which may result in security risks.\n    Only enable for files you trust.": [
         "Si le fichier HTML est fiable.\n  Faire confiance au fichier permet \u00e0 des scripts de s'ex\u00e9cuter dedans,\n  ce qui peut entra\u00eener des risques de s\u00e9curit\u00e9.\n  Activer uniquement pour les fichiers de confiance."
+      ],
+      "Whether the HTML file is trusted.\nTrusting the file allows opening pop-ups and running scripts\nwhich may result in security risks.\nOnly enable for files you trust.": [
+        "Si le fichier HTML est fiable.\nFaire confiance au fichier permet \u00e0 d'ouvrir les liens externes et d'ex\u00e9cuter des scripts JavaScript,\nce qui peut entra\u00eener des risques de s\u00e9curit\u00e9.\nActiver uniquement pour les fichiers de confiance."
       ],
       "Whether the HTML file is trusted.\nTrusting the file allows scripts to run in it,\nwhich may result in security risks.\nOnly enable for files you trust.": [
         "Si le fichier HTML est fiable.\nFaire confiance au fichier permet \u00e0 des scripts de s'ex\u00e9cuter dedans,\nce qui peut entra\u00eener des risques de s\u00e9curit\u00e9.\nActiver uniquement pour les fichiers de confiance."
