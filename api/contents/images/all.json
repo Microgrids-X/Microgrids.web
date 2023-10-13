@@ -2,20 +2,32 @@
   "content": [
     {
       "content": null,
-      "created": "2023-10-13T15:56:43.842197Z",
+      "created": "2023-10-13T16:03:05.455804Z",
       "format": null,
-      "last_modified": "2023-10-13T15:56:12.866074Z",
+      "last_modified": "2023-10-13T16:02:31.835584Z",
       "mimetype": "image/svg+xml",
       "name": "Island_power_banner.svg",
       "path": "images/Island_power_banner.svg",
       "size": 863561,
       "type": "file",
       "writable": true
+    },
+    {
+      "content": null,
+      "created": "2023-10-13T16:03:05.459804Z",
+      "format": null,
+      "last_modified": "2023-10-13T16:02:31.835584Z",
+      "mimetype": "image/png",
+      "name": "microgrid.png",
+      "path": "images/microgrid.png",
+      "size": 130445,
+      "type": "file",
+      "writable": true
     }
   ],
-  "created": "2023-10-13T15:56:43.838197Z",
+  "created": "2023-10-13T16:03:05.459804Z",
   "format": "json",
-  "last_modified": "2023-10-13T15:56:43.838197Z",
+  "last_modified": "2023-10-13T16:03:05.459804Z",
   "mimetype": null,
   "name": "images",
   "path": "images",
