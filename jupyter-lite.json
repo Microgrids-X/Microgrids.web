@@ -2,7 +2,7 @@
   "jupyter-config-data": {
     "appName": "JupyterLite",
     "appUrl": "./lab",
-    "appVersion": "0.1.2",
+    "appVersion": "0.2.3",
     "baseUrl": "./",
     "defaultKernelName": "python",
     "faviconUrl": "./lab/favicon.ico",
@@ -10,13 +10,13 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.a37e37c87d212fe85e13.js",
+        "load": "static/remoteEntry.9f387e5e108e458f62c3.js",
         "name": "@jupyter-widgets/jupyterlab-manager"
       },
       {
         "extension": "./extension",
         "liteExtension": true,
-        "load": "static/remoteEntry.fabc1fef75f1e3a86469.js",
+        "load": "static/remoteEntry.badedd5607b5d4e57583.js",
         "name": "@jupyterlite/pyodide-kernel-extension"
       },
       {
@@ -34,7 +34,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.aa1060b2d1221f8e5688.js",
+        "load": "static/remoteEntry.5cbb9d2323598fbda535.js",
         "name": "jupyterlab_pygments",
         "style": "./style"
       }
@@ -313,17 +313,15 @@
       }
     },
     "fullLabextensionsUrl": "./extensions",
-    "fullMathjaxUrl": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js",
     "fullStaticUrl": "./build",
     "licensesUrl": "./lab/api/licenses",
     "litePluginSettings": {
       "@jupyterlite/pyodide-kernel-extension:kernel": {
         "pipliteUrls": [
-          "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=559fdb0c528ad0e0843f12d3dec4e043c112bcfe56ede80ae019755d81c930b0"
+          "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=347ef7784cbabf42964174d3d5cca9b4a4fa94ee59bab5975edc948f4c7ea7cf"
         ]
       }
-    },
-    "mathjaxConfig": "TeX-AMS_CHTML-full,Safe"
+    }
   },
   "jupyter-lite-schema-version": 0
 }
