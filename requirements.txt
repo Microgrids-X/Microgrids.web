@@ -3,6 +3,7 @@
 # Core modules (mandatory)
 jupyterlite-core==0.2.3
 jupyterlab~=4.0.11
+notebook~=7.0.7 # for simpler notebook interface
 
 # Python kernel: Pyodide (may migrate to xeus-python in future)
 jupyterlite-pyodide-kernel==0.2.3
