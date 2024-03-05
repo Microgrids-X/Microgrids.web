@@ -2,11 +2,11 @@
   "content": [
     {
       "content": null,
-      "created": "2024-03-01T21:36:23.778782Z",
+      "created": "2024-03-05T18:00:02.378525Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2024-03-01T21:35:58.898613Z",
+      "last_modified": "2024-03-05T17:59:34.122390Z",
       "mimetype": "image/png",
       "name": "microgrid.png",
       "path": "images/microgrid.png",
@@ -16,11 +16,11 @@
     },
     {
       "content": null,
-      "created": "2024-03-01T21:36:23.778782Z",
+      "created": "2024-03-05T18:00:02.378525Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2024-03-01T21:35:58.894613Z",
+      "last_modified": "2024-03-05T17:59:34.122390Z",
       "mimetype": "image/svg+xml",
       "name": "Island_power_banner.svg",
       "path": "images/Island_power_banner.svg",
@@ -29,11 +29,11 @@
       "writable": true
     }
   ],
-  "created": "2024-03-01T21:36:23.778782Z",
+  "created": "2024-03-05T18:00:02.378525Z",
   "format": "json",
   "hash": null,
   "hash_algorithm": null,
-  "last_modified": "2024-03-01T21:36:23.778782Z",
+  "last_modified": "2024-03-05T18:00:02.378525Z",
   "mimetype": null,
   "name": "images",
   "path": "images",

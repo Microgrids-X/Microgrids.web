@@ -8,9 +8,9 @@ returning economic and operation indicators.
 ## ⚡ Try Microgrid simulation in your browser ⚡
 
 
-➡️ **Simple showcase** “Power for an island”: https://microgrids-x.github.io/Microgrids.web/retro/notebooks/?path=Microgrid_showcase.ipynb (using the lean [RetroLab](https://github.com/jupyterlab/retrolab) interface)
+➡️ **Simple showcase** “Power for an island”: https://microgrids-x.github.io/Microgrids.web/notebooks/?path=Microgrid_showcase.ipynb (using the simpler Notebook interface)
 
-- Version française : https://microgrids-x.github.io/Microgrids.web/retro/notebooks/?path=Microgrid_showcase_FR.ipynb (traduction partielle)
+- Version française : https://microgrids-x.github.io/Microgrids.web/notebooks/?path=Microgrid_showcase_FR.ipynb (traduction partielle)
 
 ➡️ More detailed notebook on how to use [Microgrids.py](https://github.com/Microgrids-X/Microgrids.py): https://microgrids-x.github.io/Microgrids.web/lab?path=Microgrid_Wind-Solar.ipynb
 
